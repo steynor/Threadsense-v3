@@ -738,7 +738,6 @@ def get_all_search_results(query, country_filter, sort, include_bidding, num_pag
     return full_df
 
 app = Dash(__name__)
-server = app.server
 
 app.layout = (
 html.Div(
@@ -927,6 +926,3 @@ def update_product_listings(search_value,sort_value, include_bidding_value,web_s
             raise PreventUpdate
     else:
         raise PreventUpdate
-
-if __name__ == '__main__':
-    app.run_server(debug=True)
