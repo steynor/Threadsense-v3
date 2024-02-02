@@ -927,3 +927,6 @@ def update_product_listings(search_value,sort_value, include_bidding_value,web_s
             raise PreventUpdate
     else:
         raise PreventUpdate
+
+if __name__ == '__main__':
+    app.run_server(debug=True)
