@@ -738,6 +738,7 @@ def get_all_search_results(query, country_filter, sort, include_bidding, num_pag
     return full_df
 
 app = Dash(__name__)
+server = app.server
 
 app.layout = (
 html.Div(
