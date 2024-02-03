@@ -167,6 +167,7 @@ def grailed_depop_vinted_ves_df_maker(search_input, category, grailed_flag, depo
     # Set up the Selenium driver with appropriate settings
     chrome_options = Options()
     chrome_options.add_argument("--start-maximized")
+    chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("disable-infobars"); # disabling infobars
     chrome_options.add_argument("--disable-extensions"); # disabling extensions
     chrome_options.add_argument("--headless")
